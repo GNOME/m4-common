@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:gnome="http://api.gnome.org/doap-extensions#"
+         xmlns="http://usefulinc.com/ns/doap#">
+
+  <name>M4 Common</name>
+  <shortname>m4-common</shortname>
+
+  <shortdesc xml:lang="en">Common M4 macro collection</shortdesc>
+
+  <description xml:lang="en">A hand-picked collection of aclocal M4 macros from autoconf-archive that are in common use by GNOME modules.</description>
+
+  <maintainer>
+    <foaf:Person>
+      <foaf:name>Ryan Lortie</foaf:name>
+      <foaf:mbox rdf:resource="mailto:desrt@desrt.ca"/>
+      <gnome:userid>desrt</gnome:userid>
+    </foaf:Person>
+  </maintainer>
+
+  <repository>
+    <GitRepository>
+        <browse rdf:resource="http://git.gnome.org/browse/m4-common/"/>
+      <location rdf:resource="git://git.gnome.org/m4-common"/>
+    </GitRepository>
+  </repository>
+
+</Project>
