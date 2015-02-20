@@ -19,3 +19,11 @@ all-local: $(dist_aclocal_DATA)
 	cat $^ | grep ^AC_DEFUN | grep -o '\<AX_[A-Z0-9_]*\>' | sort | uniq > defined
 	diff -u used defined
 	rm -f used defined
+
+dist-hook:
+	@echo
+	@echo
+	@echo "       Don't dist this package.  See README."
+	@echo
+	@echo
+	@false
