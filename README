@@ -1,0 +1,30 @@
+m4-common is a module to help with the installation of a subset of the
+macros from autoconf-archive.  Its primary purpose is to be installed
+early on, during a jhbuild.
+
+Macros can be added to the list to be installed when things in the jhbuild
+moduleset depend on them.
+
+This module will never be released as a tarball, so users of these
+macros are expected to ensure that they include copies of them within
+their own tarball releases.
+
+This can be accomplished by ensuring that this line is in your
+configure.ac:
+
+  AC_CONFIG_MACRO_DIR([m4])
+
+and by placing this in your toplevel Makefile.am:
+
+  ACLOCAL_AMFLAGS = --install -I m4
+
+
+This will cause the macros to be copied into your m4/ directory at autoreconf
+time.  From there, they will be automatically disted.
+
+
+Eventually, 'aclocal --install' will be automatically run[1] as part of
+'autoreconf -i', and the need for the ACLOCAL_AMFLAGS line will be removed, but
+this is not supported in the latest released version of autoconf (2.69).
+
+[1] http://lists.gnu.org/archive/html/autoconf-patches/2012-09/msg00006.html
