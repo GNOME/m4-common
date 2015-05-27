@@ -15,7 +15,7 @@ dist_aclocal_DATA = \
 	$(NULL)
 
 all-local: $(dist_aclocal_DATA)
-	cat $^ | grep -v '^#' | sed -e 's/\<dnl\>.*//' | grep -o '\<AX_[A-Z0-9_]*\>' | sort | uniq > used
+	cat $^ | grep -v '^#' | sed -e 's/\<dnl\>.*//' | grep -o '\<AX_[A-Z0-9_]*[A-Z0-9]\>' | sort | uniq > used
 	cat $^ | grep ^AC_DEFUN | grep -o '\<AX_[A-Z0-9_]*\>' | sort | uniq > defined
 	diff -u used defined
 	rm -f used defined
