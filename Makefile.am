@@ -6,6 +6,7 @@ dist_aclocal_DATA = \
 	autoconf-archive/m4/ax_append_link_flags.m4			\
 	autoconf-archive/m4/ax_append_flag.m4				\
 	autoconf-archive/m4/ax_check_compile_flag.m4			\
+	autoconf-archive/m4/ax_check_link_flag.m4			\
 	autoconf-archive/m4/ax_is_release.m4				\
 	autoconf-archive/m4/ax_code_coverage.m4				\
 	autoconf-archive/m4/ax_compiler_flags.m4			\
