@@ -6,6 +6,7 @@ dist_aclocal_DATA = \
 	autoconf-archive/m4/ax_append_link_flags.m4			\
 	autoconf-archive/m4/ax_append_flag.m4				\
 	autoconf-archive/m4/ax_check_compile_flag.m4			\
+	autoconf-archive/m4/ax_check_enable_debug.m4			\
 	autoconf-archive/m4/ax_check_girs_gjs.m4			\
 	autoconf-archive/m4/ax_check_gir_symbols_gjs.m4			\
 	autoconf-archive/m4/ax_check_link_flag.m4			\
@@ -20,6 +21,7 @@ dist_aclocal_DATA = \
 	autoconf-archive/m4/ax_pkg_check_modules.m4			\
 	autoconf-archive/m4/ax_prog_gjs.m4				\
 	autoconf-archive/m4/ax_require_defined.m4			\
+	autoconf-archive/m4/ax_valgrind_check.m4			\
 	$(NULL)
 
 all-local: $(dist_aclocal_DATA)
