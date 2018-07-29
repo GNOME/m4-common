@@ -18,8 +18,11 @@ dist_aclocal_DATA = \
 	autoconf-archive/m4/ax_compiler_flags_ldflags.m4		\
 	autoconf-archive/m4/ax_compiler_flags_gir.m4			\
 	autoconf-archive/m4/ax_cxx_compile_stdcxx.m4			\
+	autoconf-archive/m4/ax_cxx_compile_stdcxx_0x.m4			\
 	autoconf-archive/m4/ax_cxx_compile_stdcxx_11.m4			\
-	autoconf-archive/m4/ax_generate_changelog.m4                    \
+	autoconf-archive/m4/ax_cxx_compile_stdcxx_14.m4			\
+	autoconf-archive/m4/ax_cxx_compile_stdcxx_17.m4			\
+	autoconf-archive/m4/ax_generate_changelog.m4			\
 	autoconf-archive/m4/ax_pkg_check_modules.m4			\
 	autoconf-archive/m4/ax_prog_gjs.m4				\
 	autoconf-archive/m4/ax_require_defined.m4			\
