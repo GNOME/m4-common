@@ -22,8 +22,8 @@
 
   <repository>
     <GitRepository>
-        <browse rdf:resource="http://git.gnome.org/browse/m4-common/"/>
-      <location rdf:resource="git://git.gnome.org/m4-common"/>
+        <browse rdf:resource="https://gitlab.gnome.org/GNOME/m4-common"/>
+      <location rdf:resource="https://gitlab.gnome.org/GNOME/m4-common.git"/>
     </GitRepository>
   </repository>
 
