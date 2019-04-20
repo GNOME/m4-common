@@ -6,6 +6,7 @@ dist_aclocal_DATA = \
 	autoconf-archive/m4/ax_append_link_flags.m4			\
 	autoconf-archive/m4/ax_append_flag.m4				\
 	autoconf-archive/m4/ax_check_compile_flag.m4			\
+	autoconf-archive/m4/ax_check_define.m4				\
 	autoconf-archive/m4/ax_check_enable_debug.m4			\
 	autoconf-archive/m4/ax_check_girs_gjs.m4			\
 	autoconf-archive/m4/ax_check_gir_symbols_gjs.m4			\
