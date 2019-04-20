@@ -31,7 +31,7 @@ dist_aclocal_DATA = \
 
 # Here, plain m4 is being used to strip 'dnl' comments.
 all-local: $(dist_aclocal_DATA)
-	cat $^ | grep -v '^#' | grep -v 'AX_PACKAGE_REQUIRES' | m4 | grep -o '\<AX_[A-Z0-9_]*[A-Z0-9]\>' | sort | uniq > used
+	cat $^ | grep -v '^#' | grep -v 'AX_PACKAGE_REQUIRES' | grep -v 'AU_ALIAS' | m4 | grep -o '\<AX_[A-Z0-9_]*[A-Z0-9]\>' | sort | uniq > used
 	cat $^ | grep ^AC_DEFUN | grep -o '\<AX_[A-Z0-9_]*\>' | sort | uniq > defined
 	diff -u used defined
 	rm -f used defined
